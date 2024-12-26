@@ -1,0 +1,187 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f4f4f4;
+}
+
+/* Home Section */
+.home-container {
+    text-align: center;
+    background: #3e5879;
+    color: white;
+    padding: 80px 20px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.home-container .name h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.home-container .intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Courses Section */
+.courses {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.courses h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.courses-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.course {
+    background: #3e5879;
+    color: white;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+}
+
+.course h3 {
+    font-size: 24px;
+}
+
+.course p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.course a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    padding: 8px 16px;
+    background-color: #5C6BC0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.course a:hover {
+    background-color: #3e5879;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background: #3e5879;
+    color: white;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact input[type="submit"] {
+    background-color: #5C6BC0;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #3e5879;
+}
+
+/* Footer */
+footer {
+    background: #3e5879;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+/* Profile picture container */
+.profile-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Profile picture container */
+.profile-container {
+    position: absolute;
+    top: 20px;  /* Adjust the distance from the top */
+    left: 20px; /* Adjust the distance from the left */
+}
+
+/* Make the profile image circular and increase its size */
+.profile-pic {
+    width: 150px;  /* Increased size */
+    height: 150px;  /* Increased size */
+    border-radius: 50%;  /* Makes the image circular */
+    object-fit: cover;  /* Ensures the image fits inside the circle */
+}
+
+
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .courses-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
